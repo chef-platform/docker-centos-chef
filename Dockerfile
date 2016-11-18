@@ -26,6 +26,12 @@ RUN \
   /opt/chef/embedded/bin/gem install \
     busser-serverspec serverspec --no-rdoc --no-ri; \
 
+# Bundler
+  GEM_HOME="/tmp/verifier/gems" \
+  GEM_PATH="/tmp/verifier/gems" \
+  GEM_CACHE="/tmp/verifier/gems/cache" \
+  /opt/chef/embedded/bin/gem install bundler --no-rdoc --no-ri; \
+
 # Webmock can be very useful to test cookbooks
   GEM_HOME="/tmp/verifier/gems" \
   GEM_PATH="/tmp/verifier/gems" \
