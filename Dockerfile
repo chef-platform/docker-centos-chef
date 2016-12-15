@@ -39,7 +39,11 @@ RUN \
   /opt/chef/embedded/bin/gem install \
     webmock --no-rdoc --no-ri; \
 
+# Generate locale, remove a chef warning
+  localedef -v -c -i en_US -f UTF-8 en_US.UTF-8; \
+
 # Last command, we clean yum files everything
   yum clean all;
 
+ENV LANG=en_US.UTF-8
 CMD ["/bin/bash"]
