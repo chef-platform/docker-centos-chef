@@ -1,4 +1,4 @@
-FROM centos:centos7.2.1511
+FROM centos:centos7.3.1611
 MAINTAINER Samuel Bernard "samuel.bernard@s4m.io"
 
 # Let's run stuff
