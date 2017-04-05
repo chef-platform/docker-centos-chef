@@ -1,5 +1,5 @@
 FROM centos:centos7.3.1611
-MAINTAINER Samuel Bernard "samuel.bernard@s4m.io"
+MAINTAINER Samuel Bernard "samuel.bernard@gmail.com"
 
 # Let's run stuff
 RUN \
