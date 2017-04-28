@@ -7,9 +7,8 @@ RUN \
 # Classic yum update
   yum -y update; \
 
-# Basic chef install with useful package
-  CHEFURL="https://packages.chef.io/stable"; \
-  yum install -y ${CHEFURL}/el/7/chef-13.0.113-1.el7.x86_64.rpm; \
+# Basic latest chef install with useful package
+  curl -L https://omnitruck.chef.io/install.sh | bash; \
   yum install -y iproute sudo less vim tree; \
 
 # Installing Busser
