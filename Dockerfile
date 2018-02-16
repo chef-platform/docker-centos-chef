@@ -34,7 +34,7 @@ RUN \
 # Generate locale, remove a chef warning
   localedef -v -c -i en_US -f UTF-8 en_US.UTF-8; \
 # Last command, we clean yum files everything
-  yum clean all;
+  yum clean all && rm -rf /var/cache/yum
 
 ENV LANG=en_US.UTF-8
 CMD ["/bin/bash"]
