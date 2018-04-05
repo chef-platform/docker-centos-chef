@@ -6,7 +6,7 @@ RUN \
 # Classic yum update
   yum -y update; \
 # Basic latest chef install with useful package
-  curl -L https://omnitruck.chef.io/install.sh | bash -s -- -v 13.6.4 ; \
+  curl -L https://omnitruck.chef.io/install.sh | bash; \
   yum install -y iproute sudo less vim tree; \
 # Installing Busser
   GEM_HOME="/tmp/verifier/gems" \
