@@ -7,8 +7,8 @@ Kitchen (or anywhere you need Chef).
 Test it easily with:
 
     # Get the image
-    docker pull sbernard/centos-chef
+    docker pull chefplatform/centos-chef
     # Run it
-    docker run -ti --name cc sbernard/centos-chef
+    docker run -ti --name cc chefplatform/centos-chef
     # Kill and remove the container
     docker kill cc; docker rm cc
