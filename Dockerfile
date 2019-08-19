@@ -12,25 +12,25 @@ RUN \
   GEM_HOME="/tmp/verifier/gems" \
   GEM_PATH="/tmp/verifier/gems" \
   GEM_CACHE="/tmp/verifier/gems/cache" \
-  /opt/chef/embedded/bin/gem install busser --no-rdoc --no-ri \
+  /opt/chef/embedded/bin/gem install busser --no-document \
     --no-format-executable -n /tmp/verifier/bin --no-user-install; \
 # Busser plugins
   GEM_HOME="/tmp/verifier/gems" \
   GEM_PATH="/tmp/verifier/gems" \
   GEM_CACHE="/tmp/verifier/gems/cache" \
   /opt/chef/embedded/bin/gem install \
-    busser-serverspec serverspec --no-rdoc --no-ri; \
+    busser-serverspec serverspec --no-document; \
 # Bundler
   GEM_HOME="/tmp/verifier/gems" \
   GEM_PATH="/tmp/verifier/gems" \
   GEM_CACHE="/tmp/verifier/gems/cache" \
-  /opt/chef/embedded/bin/gem install bundler --no-rdoc --no-ri; \
+  /opt/chef/embedded/bin/gem install bundler --no-document; \
 # Webmock can be very useful to test cookbooks
   GEM_HOME="/tmp/verifier/gems" \
   GEM_PATH="/tmp/verifier/gems" \
   GEM_CACHE="/tmp/verifier/gems/cache" \
   /opt/chef/embedded/bin/gem install \
-    webmock --no-rdoc --no-ri; \
+    webmock --no-document; \
 # Generate locale, remove a chef warning
   localedef -v -c -i en_US -f UTF-8 en_US.UTF-8; \
 # Last command, we clean yum files everything
